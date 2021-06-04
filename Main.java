@@ -26,6 +26,14 @@ public class Main {
         //line
         System.out.println("*".repeat((size*2)+1)+" ".repeat((size*2)-3)+"*".repeat((size*2)+1));
         
+        //bottom pic
+        for(int l=size-1;l>=0;l--){
+            if(l==0){
+                System.out.println(" ".repeat(width/2)+"*");
+            }else{
+                System.out.println(" ".repeat((size*3)-l-1)+"*"+" ".repeat(l+(l-1))+"*");
+            }
+        }
         
     }
 
